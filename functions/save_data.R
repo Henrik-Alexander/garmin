@@ -32,7 +32,6 @@ write_file <- function(filename, dataset, title="Rostock running"){
   
   cat(header, file=file)
   
-  print(nrow(dataset))
   # Write a tracking points
   lapply(1:nrow(dataset), function(i) { 
     cat(

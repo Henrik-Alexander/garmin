@@ -3,7 +3,7 @@
 ## Overview
 This directory contains code to clean, plot, analyze and save data from [Garmin connect](https://connect.garmin.com/).
 
-
+*Note that parts of the code are copied from [Stephen Royle ](https://www.r-bloggers.com/2025/05/a-pace-far-different-finding-best-running-pace-with-r/)*
 ![alt text here](figures/map_run.jpeg)
 
 
