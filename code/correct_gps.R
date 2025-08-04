@@ -17,6 +17,7 @@ library(mapview)
 # Load the fucntions
 source("functions/functions.R")
 source("functions/theme.R")
+source("functions/save_data.R")
 
 ## Code is based on:
 # https://www.r-bloggers.com/2025/05/a-pace-far-different-finding-best-running-pace-with-r/
@@ -166,7 +167,9 @@ mapshot(map, file="figures/map_run.jpeg")
 
 # Save the filtered data ===================
 
-write_file(list.files("raw"), dataset=gps_df[select_observations, ])
+write_file(str_remove(list.files("raw"), ".gpx"), 
+           dataset=gps_df,
+           title="Running Rostock corrected")
 
 
 ### END #################################
