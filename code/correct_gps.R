@@ -10,7 +10,7 @@
 
 ## Clean the data ============================
 
-# Removobserva
+# Remov observations
 select_observations <- gps_df$speed < 28 & gps_df$pace < 10
 gps_df <- gps_df[select_observations, ]
 
